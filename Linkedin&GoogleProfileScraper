@@ -17,7 +17,7 @@ from parsel import Selector
 import parameters
 import numpy
 
-
+# Function call extracting title and linkedin profile iteratively
 def find_profiles():
     for r in result_div:
         # Checks if each element is present, else, raise exception
@@ -48,7 +48,7 @@ def find_profiles():
             print(e)
             continue
         
-        
+# This function iteratively clicks on the "Next" button at the bottom right of the search page. 
 def profiles_loop():
     
     find_profiles()
@@ -112,7 +112,7 @@ links = []
 titles = []
 descriptions = []
 
-# function call x10
+# Function call x10 of function profiles_loop; you can change the number to as many pages of search as you like. 
 repeat_fun(10, profiles_loop)
 
 print(titles)
@@ -121,7 +121,7 @@ print(links)
 # Separates out just the First/Last Names for the titles variable
 titles01 = [i.split()[0:2] for i in titles]
 
-
+# The function below stores scraped data into a .csv file
 from itertools import zip_longest
 # Load titles and links data into csv
 d = [titles01, links]
