@@ -1,5 +1,6 @@
-# Code for Next-Vis
+# Code for LGPS
 parameters.py
+chromedriver.exe
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
