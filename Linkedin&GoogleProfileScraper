@@ -3,6 +3,7 @@
 """
 This is a modification of the code sourced from this article: https://www.linkedin.com/pulse/how-easy-scraping-data-from-linkedin-profiles-david-craven/?trackingId=HUfuRSjER1iAyeWmcgHbyg%3D%3D
 It is a web scraper scraping google for linkedin profiles; the use case would be recruiters sourcing target candidates for recruiting purposes. 
+Also copied the find_profiles function from here: https://www.pingshiuanchua.com/blog/post/scraping-search-results-from-google-search 
 
 """
 
